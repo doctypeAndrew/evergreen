@@ -1,0 +1,56 @@
+.posts {
+  background-color: $grey;
+  position: relative;
+  padding-bottom: 70px;
+  &-title {
+    margin-top: 20px;
+  }
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @mixin px1620 {
+      justify-content: space-around;
+    }
+  }
+  &-item {
+    margin-right: 50px;
+    width: 310px;
+    margin-top: 40px;
+
+    @mixin px1620 {
+      margin-right: 0;
+    }
+
+    &-img-container {
+      /* Style for "Bitmap" */
+      width: 309px;
+      height: 232px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      img {
+        width: 101%;
+        height: 101%;
+      }
+    }
+    &-title {
+      /* Style for "Link build" */
+      color: #000000;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      line-height: 38px;
+    }
+  }
+  &-item:last-child {
+    margin-right: 0;
+  }
+  &-button {
+    padding: 0;
+    margin-top: 40px;
+    display: inline-block;
+    @mixin px1620 {
+      margin-top: 10px;
+    }
+  }
+}

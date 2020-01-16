@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'sofia_prolight';
+  src: url('../../assets/fonts/sofiapro-light-webfont.woff2') format('woff2'),
+    url('../../assets/fonts/sofiapro-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%; /* =10px*/
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 1400px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.section-title {
+  img {
+    display: inline-block;
+    margin-right: 26px;
+  }
+  h3 {
+    display: inline-block;
+    /* Style for "Who are Ev" */
+    color: $green;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.56px;
+    line-height: 51px;
+  }
+}
+.section-description {
+  width: 755px;
+  max-width: 100%;
+  color: #000000;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 46px;
+  margin-bottom: 118px;
+
+  @mixin px1000 {
+    font-size: 26px;
+    line-height: 35px;
+
+    margin-bottom: 50px;
+  }
+}
+p {
+  @mixin px1000 {
+    text-align: justify;
+  }
+}
+
+.icon {
+  &-plus-grey {
+    filter: invert(75%);
+  }
+}
+
+.bg-curved {
+  margin-bottom: -6px;
+}
+.bg-curved-down {
+  transform: rotate(180deg);
+  margin-top: -6px;
+}
+.bg-curved-grey {
+  filter: invert(6.2%);
+}

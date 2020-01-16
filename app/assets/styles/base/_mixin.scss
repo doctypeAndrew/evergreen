@@ -1,0 +1,53 @@
+/* Example File */
+@define-mixin px1620 {
+  @media (max-width: 1620px) {
+    @mixin-content;
+  }
+}
+@define-mixin px1500 {
+  @media (max-width: 1500px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin px1300 {
+  @media (max-width: 1300px) {
+    @mixin-content;
+  }
+}
+@define-mixin px1200 {
+  @media (max-width: 1200px) {
+    @mixin-content;
+  }
+}
+@define-mixin px1100 {
+  @media (max-width: 1100px) {
+    @mixin-content;
+  }
+}
+@define-mixin px1000 {
+  @media (max-width: 1000px) {
+    @mixin-content;
+  }
+}
+@define-mixin px900 {
+  @media (max-width: 900px) {
+    @mixin-content;
+  }
+}
+@define-mixin px800 {
+  @media (max-width: 800px) {
+    @mixin-content;
+  }
+}
+@define-mixin px700 {
+  @media (max-width: 700px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin px600 {
+  @media (max-width: 600px) {
+    @mixin-content;
+  }
+}

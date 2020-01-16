@@ -1,0 +1,931 @@
+.two-squares {
+  margin: 0 auto;
+  margin-top: -170px;
+  width: 1153px;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  @mixin px1200 {
+    margin-top: -120px;
+  }
+  @mixin px900 {
+    flex-direction: column;
+    align-items: center;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 550px;
+    height: 441px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 1;
+    padding-bottom: 51px;
+    max-width: 100%;
+    @mixin px1100 {
+      height: 400px;
+    }
+    @mixin px900 {
+      height: 441px;
+    }
+  }
+  &-item:first-child {
+    margin-right: 53px;
+    @mixin px900 {
+      margin-bottom: 40px;
+      margin-right: 0;
+    }
+  }
+  &-graphic {
+    margin-top: 40px;
+    &-arrow {
+      margin-right: 38px;
+      margin-bottom: 12px;
+    }
+    &-plus {
+      margin-left: 38px;
+      margin-bottom: 95px;
+    }
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 5.1rem;
+    text-transform: uppercase;
+  }
+  h3 {
+    width: 395px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    text-align: center;
+    @mixin px600 {
+      width: 300px;
+    }
+  }
+  a {
+    margin-top: 24px;
+    /* Style for "Learn more" */
+  }
+  &-seo {
+    h2 {
+      color: $green;
+    }
+  }
+  &-ppc {
+    background-color: $green;
+    color: #fff;
+  }
+}
+
+.about {
+  position: relative;
+  margin-top: 133px;
+  @mixin px1200 {
+    margin-top: 60px;
+  }
+  @mixin px1000 {
+    margin-top: 0px;
+  }
+  &-container-text {
+    max-width: 100%;
+  }
+  h3 {
+    margin-top: 87px;
+  }
+  h2 {
+    /* Style for "As Oxfords" */
+    width: 670px;
+    color: #000;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    line-height: 46px;
+    margin-top: 11px;
+
+    @mixin px1000 {
+      text-align: left;
+      font-size: 22px;
+      width: 100%;
+    }
+  }
+  p {
+    /* Style for "Based in S" */
+    width: 657px;
+    max-width: 100%;
+    color: #000000;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    margin-top: 46px;
+    @mixin px1000 {
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+  &-buttons {
+    margin-top: 57px;
+    .button {
+      margin-right: 29px;
+    }
+  }
+  &-container-graphic {
+    position: relative;
+    height: 711px;
+    width: 733px;
+    @mixin px1300 {
+      height: 580px;
+    }
+    @mixin px1000 {
+      display: none;
+    }
+  }
+  &-plus-sign {
+    position: absolute;
+    top: 0;
+    right: 220px;
+    @mixin px1300 {
+      top: 35px;
+      right: 190px;
+    }
+    @mixin px1000 {
+      top: 100px;
+      right: 130px;
+    }
+    @media (max-width: 1000px) {
+      animation-name: fadeOutRight;
+      animation-duration: 0.7s;
+      opacity: 0;
+    }
+  }
+  &-circle-lines {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    @mixin px1300 {
+      top: 55px;
+    }
+    @mixin px1000 {
+      top: 130px;
+      width: 160px;
+    }
+
+    @media (max-width: 1000px) {
+      animation-name: fadeOutRight;
+      animation-duration: 0.7s;
+      opacity: 0;
+    }
+  }
+  &-photo-face {
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    @mixin px1300 {
+      top: 60px;
+      right: 40px;
+    }
+    @mixin px1000 {
+      top: 160px;
+      right: 0;
+    }
+    @media (max-width: 1000px) {
+      animation-name: fadeOutRight;
+      animation-duration: 0.7s;
+      opacity: 0;
+    }
+  }
+  &-circle-4 {
+    position: absolute;
+    top: 350px;
+    right: 500px;
+    @mixin px1300 {
+      top: 300px;
+      right: 380px;
+    }
+    @media (max-width: 1180px) {
+      animation-name: fadeOutRight;
+      animation-duration: 0.7s;
+      opacity: 0;
+    }
+  }
+  &-circle-black {
+    position: absolute;
+    top: 490px;
+    right: 430px;
+    @mixin px1300 {
+      top: 415px;
+      right: 320px;
+    }
+    @media (max-width: 1170px) {
+      animation-name: fadeOutRight;
+      animation-duration: 0.7s;
+      opacity: 0;
+    }
+  }
+  &-photo-notes {
+    position: absolute;
+    top: 510px;
+    right: 250px;
+    @mixin px1300 {
+      top: 400px;
+      right: 170px;
+    }
+
+    @media (max-width: 1150px) {
+      animation-name: fadeOutRight;
+      animation-duration: 0.5s;
+      opacity: 0;
+    }
+  }
+
+  &-arrow {
+    position: absolute;
+    top: 570px;
+    right: 210px;
+
+    @mixin px1300 {
+      top: 470px;
+      right: 160px;
+    }
+    @mixin px1000 {
+      top: 470px;
+      right: 100px;
+    }
+    @media (max-width: 1000px) {
+      animation-name: fadeOutRight;
+      animation-duration: 0.7s;
+      opacity: 0;
+    }
+  }
+  &-green-line {
+    position: absolute;
+    right: 0;
+    top: 280px;
+    width: 40%;
+    z-index: -1;
+    @mixin px1300 {
+      top: 250px;
+    }
+    @mixin px1000 {
+      top: 280px;
+    }
+    @media (max-width: 1100px) {
+      animation-name: fadeOutRight;
+      animation-duration: 0.5s;
+      opacity: 0;
+    }
+  }
+  &-plus-sign,
+  &-circle-lines,
+  &-photo-face,
+  &-circle-4,
+  &-circle-black,
+  &-photo-notes,
+  &-arrow {
+    transition: transform 0.3 ease-in;
+    @mixin px1300 {
+      transform: scale(0.7);
+    }
+  }
+}
+
+.studies {
+  position: relative;
+  background-color: $grey;
+  &-container-items {
+    display: flex;
+    justify-content: space-between;
+    @mixin px1000 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &-cocktail {
+    background: url(../../assets/images/global/study-cocktail.png) no-repeat;
+  }
+  &-swan {
+    background: url(../../assets/images/global/study-swan.png) no-repeat;
+  }
+  &-king {
+    background: url(../../assets/images/global/study-king.png) no-repeat;
+    @mixin px1100 {
+      display: none;
+    }
+  }
+
+  &-item {
+    width: 430px;
+    height: 501px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 72px;
+    z-index: 1;
+    @mixin px1500 {
+      width: 380px;
+      height: 450px;
+    }
+    @mixin px1300 {
+      width: 340px;
+      height: 400px;
+    }
+    @mixin px1200 {
+      width: 300px;
+      height: 360px;
+    }
+    @mixin px1100 {
+      width: 430px;
+      height: 501px;
+    }
+    @mixin px700 {
+      width: 350px;
+      height: 470px;
+    }
+
+    &-text-container {
+      margin: auto;
+      margin-top: 18px;
+      width: 330px;
+      height: 435px;
+      position: relative;
+      @mixin px1500 {
+        width: 300px;
+        height: 380px;
+      }
+      @mixin px1300 {
+        width: 300px;
+        height: 330px;
+      }
+      @mixin px1200 {
+        width: 260px;
+        height: 320px;
+      }
+      @mixin px1100 {
+        width: 330px;
+        height: 435px;
+      }
+      @mixin px700 {
+        width: 300px;
+        height: 400px;
+      }
+
+      h4 {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        line-height: 32px;
+        @mixin px1200 {
+          font-size: 20px;
+        }
+        @mixin px1100 {
+          font-size: 24px;
+        }
+      }
+      p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      a {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  &-green-line {
+    position: absolute;
+    top: 20%;
+  }
+  &-circle-lines {
+    position: absolute;
+    bottom: -20%;
+    right: 18%;
+    @mixin px1000 {
+      bottom: -10%;
+      right: 12%;
+    }
+    @mixin px700 {
+      width: 150px;
+    }
+  }
+}
+
+.clients {
+  margin-top: -25px;
+  background-color: #000000;
+  position: relative;
+  z-index: -3;
+  padding-bottom: 150px;
+  @mixin px1200 {
+    padding-bottom: 20px;
+  }
+  @mixin px700 {
+    margin-top: -1px;
+  }
+  &-bg-curved-down {
+    transform: rotate(180deg);
+    position: relative;
+    z-index: -2;
+  }
+  &-circle-4 {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    @mixin px1300 {
+      top: 15%;
+    }
+    @mixin px1000 {
+      top: 10%;
+    }
+    @mixin px700 {
+      display: none;
+    }
+  }
+  &-plus {
+    position: absolute;
+    top: 30%;
+    right: 36%;
+    filter: invert(100%);
+    @mixin px1300 {
+      top: 25%;
+    }
+    @mixin px700 {
+      display: none;
+    }
+  }
+  &-title {
+    margin-top: 100px;
+  }
+  &-description {
+    color: #fff;
+  }
+  &-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-item {
+      width: 277px;
+      height: 200px;
+      position: relative;
+      border-left: 1px solid rgba($grey, 0.2);
+      @mixin px1300 {
+        border: none;
+      }
+      @mixin px700 {
+        width: 220px;
+        height: 150px;
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &-item:nth-child(-n + 5) {
+      border-bottom: 1px solid rgba($grey, 0.2);
+      @mixin px1300 {
+        border: none;
+      }
+    }
+    &-item:nth-child(1),
+    &-item:nth-child(6) {
+      border-left: none;
+    }
+
+    &-item:nth-child(5) {
+      @mixin px1500 {
+        border-left: none;
+        border-right: 1px solid rgba($grey, 0.2);
+      }
+      @mixin px1300 {
+        border: none;
+      }
+    }
+    &-item:nth-child(6),
+    &-item:nth-child(7),
+    &-item:nth-child(8) {
+      @mixin px1500 {
+        border-bottom: 1px solid rgba($grey, 0.2);
+      }
+      @mixin px1300 {
+        border: none;
+      }
+    }
+    &-item:last-child {
+      @mixin px1500 {
+        border-right: 1px solid rgba($grey, 0.2);
+      }
+      @mixin px1300 {
+        border: none;
+      }
+    }
+  }
+}
+.testimonials {
+  background-color: #000;
+  position: relative;
+  &-title {
+    margin-bottom: 75px;
+    @mixin px1000 {
+      margin-bottom: 30px;
+    }
+  }
+  &-block {
+    display: flex;
+    justify-content: center;
+    height: 330px;
+    margin: 0 auto;
+    &-1 {
+      position: relative;
+      width: 450px;
+      @mixin px800 {
+        width: 100px;
+      }
+    }
+    &-2 {
+      margin-left: 35px;
+      @mixin px1000 {
+        margin-left: 15px;
+      }
+      @mixin px800 {
+        margin-left: 0;
+      }
+    }
+  }
+  &-black-circle {
+    filter: invert(11.5%);
+    position: absolute;
+    left: 70px;
+    @mixin px1200 {
+      display: none;
+    }
+  }
+  &-quotes {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &-face {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    z-index: 1;
+    @mixin px800 {
+      display: none;
+    }
+  }
+  &-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    @mixin px1200 {
+      display: none;
+    }
+  }
+  &-text {
+    /* Style for "I have bee" */
+    width: 700px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    @mixin px1200 {
+      font-size: 22px;
+      font-weight: 500;
+      width: 500px;
+    }
+    @mixin px1000 {
+      font-size: 20px;
+      font-weight: 500;
+      width: 380px;
+    }
+    @mixin px800 {
+      width: 100%;
+    }
+  }
+  &-name {
+    /* Style for "Nicola, Di" */
+    color: $green;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.56px;
+    line-height: 51px;
+    margin-top: 80px;
+  }
+  &-dots {
+    margin-top: 20px;
+  }
+  &-line {
+    position: absolute;
+    top: 20%;
+    left: -400px;
+  }
+  &-bg-white {
+    margin-bottom: -6px;
+    margin-top: 67px;
+    @mixin px700 {
+      margin-top: 100px;
+    }
+  }
+}
+.evergreen {
+  &-block {
+    display: flex;
+
+    &-1,
+    &-2 {
+      width: 50%;
+    }
+    &-1 {
+      @mixin px800 {
+        width: 100%;
+      }
+    }
+
+    &-2 {
+      position: relative;
+      @mixin px1300 {
+        transform: scale(0.9);
+        right: -5%;
+      }
+      @mixin px1100 {
+        transform: scale(0.8);
+        right: -8%;
+      }
+      @mixin px1000 {
+        transform: scale(0.7);
+        right: -12%;
+      }
+      @mixin px900 {
+        transform: scale(0.6);
+        right: -16%;
+      }
+      @mixin px800 {
+        display: none;
+      }
+    }
+    h2 {
+      width: 665px;
+      max-width: 100%;
+      margin-right: 70px;
+      margin-bottom: 100px;
+      @mixin px1300 {
+        font-size: 22px;
+      }
+      @mixin px1000 {
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+      @mixin px800 {
+        margin-right: 0;
+      }
+    }
+    &-1-graphic {
+      @mixin px1100 {
+        width: 70%;
+      }
+      @mixin px800 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &-buttons {
+    margin-top: 65px;
+  }
+  &-plus {
+    position: absolute;
+    top: 0;
+    right: 312px;
+  }
+  &-circle-lines {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+  }
+  &-faces {
+    position: absolute;
+    top: 80px;
+    right: 200px;
+  }
+  &-office {
+    position: absolute;
+    top: 390px;
+    right: 60px;
+    z-index: -1;
+  }
+  &-arrow {
+    position: absolute;
+    top: 490px;
+    right: 470px;
+  }
+  &-circle-3 {
+    position: absolute;
+    top: 500px;
+    right: 30px;
+  }
+  &-circle-black {
+    position: absolute;
+    top: 625px;
+    right: 150px;
+    z-index: -2;
+  }
+  &-seo {
+    position: absolute;
+    top: 570px;
+    right: 270px;
+  }
+}
+.trusted-row {
+  display: flex;
+  align-items: center;
+  margin-top: 142px;
+  position: relative;
+
+  @mixin px1200 {
+    justify-content: space-around;
+  }
+  @mixin px1000 {
+    flex-wrap: wrap;
+  }
+  &-item.circle {
+    position: relative;
+    width: 242px;
+    height: 242px;
+    margin-right: 48px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    z-index: 1;
+    margin-bottom: 20px;
+    @mixin px1500 {
+      margin-right: 40px;
+    }
+    @mixin px1300 {
+      margin-right: 20px;
+      width: 230px;
+      height: 230px;
+    }
+    @mixin px1200 {
+      margin-right: 0;
+
+      width: 242px;
+      height: 242px;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .trusted-row-item-h2 {
+    @mixin px1200 {
+      position: absolute;
+      top: -25%;
+      text-align: center;
+      width: 100%;
+    }
+    @mixin px800 {
+      top: -15%;
+    }
+
+    @mixin px600 {
+      top: -12%;
+    }
+  }
+  h2 {
+    /* Style for "Trusted an" */
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    line-height: 46px;
+
+    @mixin px600 {
+      font-size: 30px;
+    }
+  }
+}
+
+.reviews {
+  width: 100%;
+  display: flex;
+  @mixin px700 {
+    flex-direction: column;
+  }
+  p {
+    /* Style for "Lorem ipsu" */
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    margin-top: 52px;
+    @mixin px1500 {
+      margin-top: 10px;
+    }
+    @mixin px1000 {
+      font-size: 18px;
+    }
+  }
+  h4 {
+    /* Style for "Jessica, e" */
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.17px;
+    line-height: 51px;
+    @mixin px1200 {
+      font-size: 14px;
+    }
+  }
+
+  &-block-content {
+    margin-top: 67px;
+    width: 628px;
+    max-width: 89%;
+    padding-bottom: 67px;
+    @mixin px1300 {
+      margin-top: 30px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &-block-1 {
+    padding-right: 72px;
+    width: 50%;
+    @mixin px1200 {
+      padding-right: 40px;
+    }
+    @mixin px700 {
+      width: 100%;
+    }
+    .reviews-block-content {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    .reviews-by {
+      @mixin px1000 {
+        justify-content: space-between;
+      }
+    }
+    h4 {
+      margin-left: 50px;
+      @mixin px1200 {
+        margin-left: 20px;
+      }
+    }
+  }
+  &-block-2 {
+    background-color: $green;
+    width: 50%;
+    padding-left: 72px;
+    @mixin px1200 {
+      padding-left: 40px;
+    }
+    @mixin px700 {
+      width: 100%;
+    }
+    text-align: right;
+    color: #fff;
+    .reviews-by {
+      justify-content: flex-end;
+      @mixin px1000 {
+        justify-content: space-between;
+      }
+    }
+    h4 {
+      margin-right: 50px;
+
+      @mixin px1200 {
+        margin-right: 20px;
+      }
+      @mixin px1000 {
+        order: 2;
+      }
+    }
+  }
+  &-by {
+    display: flex;
+    align-items: center;
+    margin-top: 66px;
+    height: 90px;
+    @mixin px1000 {
+      flex-direction: column;
+      height: 130px;
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+}
